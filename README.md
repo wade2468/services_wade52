@@ -65,6 +65,15 @@ http://127.0.0.1:8080/
 # 檢查有哪些stack
 docker stack ls
 
+# 查看目前節點
+docker node ls
+
+# 查看Swarm 狀態
+docker info | grep -i swarm
+
+# 讓某個worker 離開Swarm
+docker swarm leave
+
 ## rm stack
 	docker stack rm airflow api crawler mysql rabbitmq
 
